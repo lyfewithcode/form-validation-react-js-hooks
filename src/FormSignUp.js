@@ -1,8 +1,9 @@
 import React from 'react'
 import useForm from './useForm'
+import validateInfo from './validateInfo'
 
 const FormSignUp = () => {
-    const { handleChange, values, handleSubmit } = useForm()
+    const { handleChange, values, handleSubmit } = useForm(validate)
 
     return (
         <div className='form-content-right'>
