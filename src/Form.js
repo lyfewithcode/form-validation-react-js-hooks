@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import FormSignUp from './FormSignUp'
 import FormSuccess from './FormSuccess'
+import './Form.css'
 
 const Form = () => {
     const [isSubmitted, setIsSubmitted] = useState(false)
@@ -9,10 +10,19 @@ const Form = () => {
         setIsSubmitted(true)
     }
     return (
-        <div>
-            {/* {!isSubmitted ? <FormSignUp submitForm={submitForm} /> : <FormSuccess />} */}
-            <FormSuccess />
-        </div>
+        <>
+            <div className='form-container'>
+                <span className='close-btn'>×</span>
+                <div className='form-content-left'>
+                <img className='form-img' src='img/img-2.svg' alt='spaceship' />
+            </div>
+                {!isSubmitted ? (
+                    <FormSignUp submitForm={submitForm} />
+                ) : (
+                    <FormSuccess />
+                )}
+            </div>
+        </>
     )
 }
 

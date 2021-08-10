@@ -22,7 +22,7 @@ const FormSignUp = ({submitForm}) => {
                         id='username'
                         type='text'
                         name='username'
-                        className='form-label'
+                        className='form-input'
                         placeholder='Enter your username'
                         value={values.username}
                         onChange={handleChange}
@@ -37,7 +37,7 @@ const FormSignUp = ({submitForm}) => {
                         id='email'
                         type='email'
                         name='email'
-                        className='form-label'
+                        className='form-input'
                         placeholder='Enter your email'
                         value={values.email}
                         onChange={handleChange}
@@ -52,7 +52,7 @@ const FormSignUp = ({submitForm}) => {
                         id='password'
                         type='password'
                         name='password'
-                        className='form-label'
+                        className='form-input'
                         placeholder='Enter your password'
                         value={values.password}
                         onChange={handleChange}
@@ -67,7 +67,7 @@ const FormSignUp = ({submitForm}) => {
                         id='password2'
                         type='password'
                         name='password2'
-                        className='form-label'
+                        className='form-input'
                         placeholder='Confirm your password'
                         value={values.password2}
                         onChange={handleChange}
